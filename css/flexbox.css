@@ -1,3 +1,5 @@
+/* Cabeçalho */
+
 .cabecalho__container {
     display: flex;
     justify-content: space-between;
@@ -5,13 +7,39 @@
     position: fixed;
     top: 0px;
 }
-
 .cabecalho__pesquisar__item {
     display: none;
 }
 
+/* Seção Superior */
+
+.superior__secao__container {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: scroll;
+    gap: 15px;
+}
+
+/* Rodapé */
+
+.rodape__container {
+    display: flex;
+    flex-flow: column wrap;
+}
+
 @media (min-width:834px) {
+
+    /* Cabeçalho */
+
     .cabecalho__pesquisar__item {
         display: block;
     }
+
+    /* Rodapé */
+
+    .rodape__container {
+        justify-content: space-between;
+    }
+
 }
